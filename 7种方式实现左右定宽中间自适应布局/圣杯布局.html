@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+    .common{
+      height: 300px;
+      border: 1px solid #abc;
+      box-sizing: border-box;
+    }
+
+    /*圣杯布局的最大的特点就是，中间列也就是内容列，会优先加载*/
+
+    /*容器提供定位上下文，左右padding是为了给左右列留出空间*/
+    .wrap {
+      position: relative;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    /*因为容器已经有padding了， 所以中间列宽度设为100%*/
+    .mid {
+      float: left;
+      width: 100%;
+    }
+    /*左列先通过margin-left: -100%拉到容器左侧， 由于容器有padding-left， 因此需使用相对定位，再往左移动200px*/
+    .left {
+      float: left;
+      position: relative;
+      left: -200px;
+      margin-left: -100%;
+      width: 200px;
+    }
+    /*右列与左列同理， 只是移动的值不同*/
+    .right {
+      float: left;
+      position: relative;
+      left: 200px;
+      margin-left: -200px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="mid common">mid</div>
+    <div class="left common">left</div>
+    <div class="right common">right</div>
+  </div>
+
+</body>
+</html>
