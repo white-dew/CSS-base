@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-		* {
-			margin: 0;
-		}
-		.wrap {
-			display: flex;
-		}
-		
-		.common{
-			border: 1px solid #abc;
-			box-sizing: border-box;
-			height: 300px;
-		}
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+    .wrap {
+      display: flex;
+    }
+    
+    .common{
+      border: 1px solid #abc;
+      box-sizing: border-box;
+      height: 300px;
+    }
 
-		/*
-			项目flex属性为缩写属性，分别为:
-			flex-grow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
-			flex-shrink 属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
-			flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。可设为像素固定值
-		*/
-		.left {
-			flex: 0 0 200px;
-		}
-		.mid {
-			flex: 1 1 auto;
-		}
-		.right {
-			flex: 0 0 200px;
-		}
-	</style>
+    /*
+      项目flex属性为缩写属性，分别为:
+      flex-grow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+      flex-shrink 属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+      flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。可设为像素固定值
+    */
+    .left {
+      flex: 0 0 200px;
+    }
+    .mid {
+      flex: 1 1 auto;
+    }
+    .right {
+      flex: 0 0 200px;
+    }
+  </style>
 </head>
 <body>
 
-	<div class="wrap">
-		<div class="left common">left</div>
-		<div class="mid common">mid</div>
-		<div class="right common">right</div>
-	</div>
+  <div class="wrap">
+    <div class="left common">left</div>
+    <div class="mid common">mid</div>
+    <div class="right common">right</div>
+  </div>
 
 </body>
 </html>
