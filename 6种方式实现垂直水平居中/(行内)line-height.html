@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    /*
+      居中元素的line-height设为父元素的高度即可
+      特点： 只适用于单行
+    */
+    .wrap {
+      width: 200px;
+      height: 200px;
+      background-color: #abc;
+    }
+    .index {
+      line-height: 200px;/*关键*/
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <p class="index">我居中了</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+    }
+    
+    .wrap {
+      position: relative;
+            
+      width: 600px;
+      height: 600px;
+      background-color: #abc;
+    }
+    /*绝对定位， 移动50%父元素高度 - 自身50%高度*/
+    .index {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%); /*这里50%是相对于自身元素的。也可以使用margin-top和margin-left移回去，但是margin不能设50%，它是相对于父元素的*/
+      /*margin-top: -50px;*/
+      /*margin-left: -50px;*/
+
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="index"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    .wrap {
+      width: 600px;
+      height: 600px;
+      background-color: #abc;
+      text-align: center;
+    }
+    .index {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      vertical-align: middle; /*关键*/
+      background-color: #fff;
+    }
+    .img{
+      width: 0;
+      height: 100%;
+      visibility: hidden;
+      vertical-align: middle; /*关键*/
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <img class="img" src="" alt="">
+    <span class="index"></span>
+  </div>
+
+</body>
+</html>
