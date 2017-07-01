@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title></title>
-  <style type="text/css">
+  <style>
     * {
       margin: 0;
     }
-    .common {
+    .common{
       height: 300px;
       border: 1px solid #abc;
       box-sizing: border-box;
     }
-    
-    .wrap{
+
+    /*双飞翼与圣杯类似，只是中间列用一个容器div包住了, */
+    .wrap {
     }
-    /*关键在于container，宽度设为100%，内部的mid给右边留出了空间，负右边距将浮动的右列拉回*/
-    .container {
+    .container{
       float: left;
       width: 100%;
-      margin-right: -200px;
     }
-
-    .left {
-      float: left;
-      width: 200px;
-    }
-    /*中间列左右边距给左右列留出空间*/
     .mid {
       margin-left: 200px;
       margin-right: 200px;
     }
+    .left {
+      float: left;
+      margin-left: -100%;
+      width: 200px;
+    }
     .right {
       float: left;
+      margin-left: -200px;
       width: 200px;
     }
   </style>
 </head>
 <body>
-
+  
   <div class="wrap">
     <div class="container">
-      <div class="left common">left</div>
-      <div class="mid common">mid</div>
+       <div class="mid common">mid</div>
     </div>
+    <div class="left common">left</div>
     <div class="right common">right</div>
   </div>
+
 
 </body>
 </html>
