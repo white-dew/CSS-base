@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+    .common {
+      height: 300px;
+      border: 1px solid #abc;
+      box-sizing: border-box;
+    }
+    
+    /*关键在于container，宽度设为100%，内部的mid给右边留出了空间，负右边距将浮动的右列拉回*/
+    .container {
+      float: left;
+      width: 100%;
+      margin-right: -200px;
+    }
+
+    .left {
+      float: left;
+      width: 200px;
+    }
+    /*中间列左右边距给左右列留出空间*/
+    .mid {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    .right {
+      float: left;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="container">
+      <div class="left common">left</div>
+      <div class="mid common">mid</div>
+    </div>
+    <div class="right common">right</div>
+  </div>
+
+</body>
+</html>

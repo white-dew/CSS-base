@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+    .common {
+      height: 300px;
+      border: 1px solid #abc;
+      box-sizing: border-box;
+    }
+    
+    /*容器提供定位上下文*/
+    .wrap {
+      position: relative;
+    }
+
+    /*左列浮动*/
+    .left {
+      float: left;
+      width: 200px;
+    }
+    /*中间列标准文档流*/
+    .mid {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    /*右列绝对定位， 拉到右侧*/
+    .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="left common">left</div>
+    <div class="mid common">mid</div>
+    <div class="right common">right</div>
+  </div>
+
+</body>
+</html>
