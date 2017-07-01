@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+		}
+		.common{
+			height: 300px;
+			border: 1px solid #abc;
+			box-sizing: border-box;
+		}
+		.left {
+			float: left;
+			width: 200px;
+		}
+		.mid {
+			float: left;
+			/* 注意这里calc的参数，-号两边一定要加空格 */
+			width: calc(100% - 400px);
+		}
+		.right {
+			float: left;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<div class="left common">left</div>
+		<div class="mid common">mid</div>
+		<div class="right common">right</div>
+	</div>
+
+</body>
+</html>
